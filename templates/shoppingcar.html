@@ -1,0 +1,364 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/public.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shoppingcar.css' %}">
+    <script src="{% static 'js/jquery-1.12.0.js' %}"></script>
+    <script src="{% static 'js/jquery.cookie.js' %}"></script>
+    <script src="{% static 'js/producuts.js' %}"></script>
+    <script src="{% static 'js/sort.js' %}"></script>
+    <script src="{% static 'js/shopping.js' %}"></script>
+    <script src="{% static 'js/test.js' %}"></script>
+</head>
+<body>
+<div class="top-header">
+    <div class="t-menu">
+        <div class="hello">
+            你好：欢迎光临天狗商城！[<a href="{% url 'Tiangou:login' %}">请登录</a>],新用户？[<a href="{% url 'Tiangou:login' %}">免费注册</a>]
+        </div>
+        <div class="shop">
+            <span class="shoppingCar">
+                <a href="{% url 'Tiangou:shoppingcar' %}">购物车<span class="red1 b">1</span>件</a>
+            </span>
+            <a class="sub" href="">我的订单</a>|
+            <a class="sub" href="">网站地图</a>|
+            <a class="sub" href="">帮助中心</a>|
+            <a class="sub" href="">加入收藏</a>|
+            <a class="sub" href="">设为首页</a>
+        </div>
+    </div>
+</div>
+<!--    =============top=============    -->
+<div class="top">
+    <div class="header">
+        <div class="logo">
+            <a href="">
+                <img src="{% static 'img/logo.jpg'%}" alt="天狗商城">
+            </a>
+        </div>
+        <div class="search">
+            <dl>
+                <dd>
+                    <span class="tag">商品</span>
+                </dd>
+                <dd>
+                        <span class="r">
+                            <input style="border: none; background: url(img/search.png)  left top; height: 30px;
+                                width: 148px;" onclick="search()" type="button">
+                        </span>
+                    <input class="input-n" id="searchWord" placeholder="多搜搜，意外惊喜等你拿">
+                </dd>
+                <dt class="suol">
+                    <a href="#" target="_blank">手机/钟表/家电/电脑/男装/女装/灯具/童装/儿童玩具/笔记本/平板/相机/鞋</a></dt>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="menu-neuy">
+    <div class="menu">
+        <div class="leftmenu">所有商品分类
+            <div class="lun_left">
+                <ul>
+                    <li>
+                        <img src="{% static 'img/li5.jpg'%}" alt="">
+                        <a class="aa" href="">家用电器</a>
+
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li11.jpg'%}" alt="">
+                        <a class="aa" href="">珠宝首饰</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li12.jpg'%}" alt="">
+                        <a class="aa" href="">时尚钟表</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li13.jpg'%}" alt="">
+                        <a class="aa" href="">运动健康</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li7.jpg'%}" alt="">
+                        <a class="aa" href="">图书音像</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li9.jpg'%}" alt="">
+                        <a class="aa" href="">家居家装</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li10.jpg'%}" alt="">
+                        <a class="aa" href="">厨具用品</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li4.jpg'%}" alt="">
+                        <a class="aa" href="">电脑办公</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li2.jpg'%}" alt="">
+                        <a class="aa" href="">服饰鞋帽</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li5.jpg'%}" alt="">
+                        <a class="aa" href="">家用电器</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li8.jpg'%}" alt="">
+                        <a class="aa" href="">个护化妆</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li6.jpg'%}" alt="">
+                        <a class="aa" href="">汽车用品</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li3.jpg'%}" alt="">
+                        <a class="aa" href="">玩具乐器</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="{% static 'img/li1.jpg'%}" alt="">
+                        <a class="aa" href="">食品保健</a>
+                        <ul class="clearfix">
+                            <div class="brandtan clear">
+                                <div class="selectsort">
+                                </div>
+                                <div class="prdhot">
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav">
+            <li>
+                <a href="home page.html">首页</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_12">手机数码</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_19">礼品箱包</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_15">厨具用品</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_16">电脑办公</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_17">服饰鞋帽</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_18">个护化妆</a>
+            </li>
+            <li>
+                <a href="/p/aspx/list.aspx?typeid=F_27">母婴用品</a>
+            </li>
+        </ul>
+        <div class="hot_right">
+            <dl>
+                <dd>
+                    <a href="#" target="_blank"><div class="hot"></div></a>
+                    <a href="#" target="_blank">分销</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank"><div class="new"></div></a>
+                    <a href="#" target="_blank">导航</a>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank"><div class="diy"></div></a>
+                    <a href="#" target="_blank">团购</a>
+                </dd>
+                <dd>
+                    <a href="#"><div class="go"></div></a>
+                    <a href="#" target="_blank">充值</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="menu_1">
+    <div class="pf">
+    </div>
+</div>
+
+<!-- ===============================购物车=============================== -->
+<div class="cartposition"><img src="{% static 'img/cart1.gif'%}" alt=""></div>
+<div class="pb_whitebg" id="shopCart">
+    <table>
+        <thead>
+        <tr>
+            <th width="38%">产品名称</th>
+            <th width="11%">市场价</th>
+            <th width="11%">商城价</th>
+            <th width="18%">数量</th>
+            <th width="11%">小计</th>
+            <th width="11%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr><td><p><img src="{% static '/static/img/pro2.jpg'%}"><a href="#">
+                        【联通4G】魅蓝 metal 16G灰色 超值套装，5.5英寸 送耳机+保护套+贴膜</a></p></td><td><span>￥1369</span></td><td><b>￥1099</b></td><td><a href="#"><img class="minus" src="{% static 'img/menu_minus.gif'%}"></a>   <input readonly="readonly" type="text" size="3" value="1">   <a href="#"><img class="plus" src="{% static 'img/menu_plus.gif'%}"></a></td><td><strong>￥1099</strong></td><td><a class="quXiao" href="#">取消订购</a></td></tr></tbody>
+        <tfoot>
+        <tr>
+            <td colspan="6" align="left">
+                <p>共<b>1</b>件商品 　价格总计：<b>￥1099</b>您是 未登录用户（不享受折扣价）(不含运费)</p>
+                <a href="#"> <img class="clearCart" src="{% static 'img/clearcart.gif'%}" alt=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" align="right">折后价格<b>￥1099</b>&nbsp;&nbsp;获得积分：765</td>
+        </tr>
+        <tr>
+            <th colspan="6" align="right"><a href="home page.html"><img src="{% static 'img/go on.gif'%}" alt="">继续购物</a>
+                　<a href="/iusers/buyInfop.aspx"><img src="{% static 'img/gomoney.gif'%}" alt=""></a>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="footerbg">
+    <div id="bottom1_linkUrl" class="friendlink"><strong>友情链接：</strong><a target="_blank" href="http://www.jiancai0591.com">天狗网商城</a><a target="_blank" href="http://www.jxhscjc.com/">介休市弘盛昌家具建材装饰城</a><a target="_blank" href="http://www.jxbzmm.com">介休鸿宪居装饰公司</a><a target="_blank" href="http://www.jxjjjcw.com">介休家具建材网</a><a target="_blank" href="http://www.tgwlkj.com">天狗网络科技有限公司</a><a target="_blank" href="http://jxtgwl.sitekc.com/">天狗网络科技自助建站系统</a><a target="_blank" href="http://www.jxbgfd0591.com">天狗网上商城</a><a target="_blank" href="http://www.jxtthg.com">涛涛三味火锅餐饮有限公司</a></div>
+    <!--友情连接 end-->
+    <div class="help_cent">
+        <div class="help_cent_l">
+            <ul>
+                <li><img src="{% static 'img/tel.jpg'%}">客服服务热线<div class="tel">03547357121  13383445351
+                    <a target="_blank" href="#"><img src="{% static 'img/liuyan.gif'%}" alt="有事点这里" border="0"></a></div><span>(7*24小时服务)</span></li>
+                <li id="bottom1_kfdm"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1253048126&amp;site=qq&amp;menu=yes"><img src="{% static 'img/jiaotan.gif'%}" alt="点这里联系我" title="点这里联系我" border="0"></a></li>
+            </ul>
+        </div>
+        <div class="help_cent_r">
+
+            <span id="bottom1_help"><ul><li style="list-style-image: none"><img src="{% static 'img/gu0.jpg'%}" alt=""><h3>关于我们</h3></li><li class="mar"><a href="#" target="_blank">货源提供</a></li><li class="mar"><a href="#" target="_blank">联系客服</a></li><li class="mar"><a href="#" target="_blank">商城简介</a></li></ul><ul><li style="list-style-image: none"><img src="{% static 'img/gu1.jpg'%}" alt=""><h3>售后服务</h3></li><li class="mar"><a href="#" target="_blank">产品退换</a></li><li class="mar"><a href="#" target="_blank">订单查询</a></li><li class="mar"><a href="#" target="_blank">收货说明</a></li><li class="mar"><a href="#" target="_blank">在线旺旺客服</a></li></ul><ul><li style="list-style-image: none"><img src="{% static 'img/gu2.jpg'%}" alt=""><h3>支付宝</h3></li><li class="mar"><a href="#" target="_blank">支付宝</a></li><li class="mar"><a href="#" target="_blank">货到付款</a></li><li class="mar"><a href="#" target="_blank">银行付款</a></li></ul><ul><li style="list-style-image: none"><img src="{% static 'img/gu3.jpg'%}" alt=""><h3>购物指南</h3></li><li class="mar"><a href="#" target="_blank">购物流程</a></li><li class="mar"><a href="#" target="_blank">常见问题</a></li><li class="mar"><a href="#" target="_blank">会员注册</a></li></ul><ul><li style="list-style-image: none"><img src="{% static 'img/gu4.jpg'%}" alt=""><h3>配送方式</h3></li><li class="mar"><a href="#" target="_blank">运费标准</a></li><li class="mar"><a href="#" target="_blank">配送政策</a></li><li class="mar"><a href="#" target="_blank">订单说明</a></li></ul></span>
+            <ul>
+                <li style="width: 140px; float: left; list-style-image: none">
+                    <img src="{% static 'img/wx.jpg'%}">
+                    <h3>
+                        <a href="/android/an_index.aspx" target="_blank">手机扫二维码登陆</a></h3>
+                </li>
+                <li style="float: right; list-style-image: none;"><a href="/android/an_index.aspx" target="_blank">
+                    <img id="bottom1_ewmimg" src="{% static 'undefined'%}" width="120px" height="120px"></a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="footer">
+        天狗网络科技有限公司版权所有
+        <div id="bottom1_tongji"><span><a href="#" title="站长统计">站长统计</a></span></div>
+    </div>
+    <p id="bottom1_bootonContent"></p>
+</div>
+
+test.js:8:8
+
+</body>
+</html>

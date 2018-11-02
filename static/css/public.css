@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    text-decoration: none;
+}
+body{  background: #ededed}
+img{border:0;}
+input{vertical-align:middle;}
+a{color:#070707;text-decoration:none;}
+a:hover{text-decoration:none;}
+b{ color:#d90000; font-weight:normal;}
+h1{ font-size:14px; color:#323232; font-weight:normal;}
+.top-header{
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    border-top: 1px #e8e8e8 solid;
+    border-bottom: 1px #e8e8e8 solid;
+    background: #e8e8e8;
+}
+.t-menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.hello{
+    width: 750px;
+    float: left;
+}
+.hello a{
+    color: #ff6600;
+    margin: 0 5px;
+}
+.shop{
+    width: 450px;
+    float: left;
+}
+.shop a{
+    color: #000;
+}
+.shop a span{
+    color: #d62326;
+}
+.shop .shoppingCar{
+    background: url("img/shoppingcar.jpg");
+    width: 77px;
+    margin: 4px 8px 0 0;
+    float: left;
+    line-height: 21px;
+    padding-left: 27px
+}
+.shop .sub {
+    margin: 0 5px;
+}
+
+/*================================头部样式=================================*/
+.top {
+    height: 100px;
+    color: #000;
+    background-color: #FFFFFF;
+}
+.header {
+    width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+    height: 90px;
+}
+.logo {
+    width: 230px;
+    float: left;
+}
+.logo a {
+    display: block;
+    width: 230px;
+}
+.search {
+    float: right;
+    width: 666px;
+    line-height: 24px;
+    margin-right: 30px;
+}
+.tag {
+    background: indianred;
+    width: 49px;
+    height: 21px;
+    display: block;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    padding-top: 8px;
+}
+.r {
+    float: right;
+}
+.input-n {
+    width: 473px;
+    height: 27px;
+    border: 2px solid #d72426;
+    line-height: 27px;
+    background: url("img/bg_bg.gif") no-repeat;
+    background-position: 0px -36px;
+    padding-left: 35px;
+    background-color: #FFFFFF;
+}
+.suol a {
+    margin: 0 5px;
+}
+
+/*=========================menu菜单=================================*/
+.menu-neuy{
+    height: 43px;
+    line-height: 43px;
+    background: url("img/menubg.jpg");
+}
+.menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+.leftmenu {
+    width: 120px;
+    background: #940206;
+    height: 41px;
+    border-top: 2px solid #f22c2c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+.menu ul {
+    float: left;
+    height: 39px;
+}
+.menu ul li {
+    float: left;
+    width: 100px;
+}
+.nav a {
+    float: left;
+    width: 100px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    display: block;
+    border-left: 1px solid #d4171a;
+    border-right: 1px solid #9f1113;
+    margin: 2px 0;
+    color: #fff;
+    text-align: center;
+}
+.nav a:hover{
+    background: black;
+}
+.hot_right {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 0px;
+    margin-right: 30px;
+}
+.hot_right dl {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.hot_right dl dd {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    color: #FFFFFF;
+}
+.hot_right dl dd a {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.new,.hot,.diy,.go {
+    position: absolute;
+    float: left;
+    margin-right: 5px;
+    top: -10px;
+    width: 22px;
+    height: 22px;
+}
+.new{background: url(img/new.png) no-repeat;}
+.hot{background: url(img/hot.png) no-repeat;}
+.diy{background: url(img/diy.png) no-repeat;}
+.go{background: url(img/go.png) no-repeat;}
+.menu_1 {
+    background: #8d7f7e;
+    height: 42px;
+}
+.menu_1 .pf {
+    width: 1200px;
+    height: 42px;
+    margin: auto;
+    background: #940206;
+}
+
+
+.footerbg {
+    width: 1200px;
+    margin: 15px auto 0 auto;
+    clear: both;
+    background-color: #FFFFFF;
+    padding-top: 5px;
+}
+.friendlink {
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+    line-height: 40px;
+    border: #cccccc 1px solid;
+    clear: both;
+}
+.friendlink a {
+    padding-left: 13px;
+}
+.help_cent {
+    padding: 10px;
+    width: 1180px;
+    background: #ffffff;
+    height: 193px;
+    margin: auto;
+}
+.help_cent_l {
+    width: 240px;
+    background: #f8f8f8;
+    float: left;
+    height: 193px;
+}
+.help_cent_l ul {
+    margin: 20px 0px 0px 40px;
+}
+.help_cent_l ul li {
+    padding-bottom: 5px;
+    line-height: 22px;
+    padding-left: 0px;
+    width: 164px;
+    padding-right: 0px;
+    float: left;
+    color: #999999;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.help_cent_l ul li .tel {
+    font: bold 20px/35px Arial, Helvetica, sans-serif;
+    color: #c40000;
+    display: block;
+}
+.help_cent_l ul li span {
+    padding-left: 15px;
+}
+.help_cent_l ul li {
+    padding-bottom: 5px;
+    line-height: 22px;
+    padding-left: 0px;
+    width: 164px;
+    padding-right: 0px;
+    float: left;
+    color: #999999;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.help_cent_r {
+    width: 920px;
+    background: #f8f8f8;
+    float: left;
+    height: 178px;
+    margin-left: 10px;
+    padding-top: 15px;
+}
+.help_cent_r ul {
+    padding-bottom: 0;
+    padding-left: 45px;
+    width: 100px;
+    padding-right: 0;
+    float: left;
+    padding-top: 10px;
+}
+.help_cent_r ul li {
+    line-height: 28px;
+    width: 80px;
+}
+.help_cent_r ul li img {
+    float: left;
+    margin-right: 3px;
+}
+.help_cent_r ul li h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.help_cent_r ul li.mar {
+    margin-left: 10px;
+}
+.help_cent_r ul {
+    padding-bottom: 0px;
+    padding-left: 45px;
+    width: 100px;
+    padding-right: 0px;
+    float: left;
+    padding-top: 10px;
+}
+.help_cent_r ul li {
+    line-height: 28px;
+}
+.help_cent_r ul li img {
+    float: left;
+    margin-right: 3px;
+}
+.help_cent_r ul li {
+    line-height: 28px;
+    width: 80px;
+}
+.foot {
+    width: 1200px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    clear: both;
+}
+.footer {
+    padding: 10px;
+    text-align: center;
+    line-height: 22px;
+}

@@ -1,0 +1,775 @@
+
+
+/*============================动画部分  轮播图=============================*/
+.lunBo{
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    height: 505px;
+}
+.lun_left{
+    width: 135px;
+    float: left;
+}
+.lun_left ul li{
+    width: 135px;
+    height: 35px;
+    background: url("img/back_li.gif");
+    line-height: 35px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid darkred;
+}
+
+.lun_left ul li img{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.lun_left ul li .aa{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+.lun_left ul li ul {
+    position: absolute;
+    left: 136px;
+    top: 0;
+    width: 200px;
+    background: #8F0100;
+    z-index: 50;
+    display: none;
+    text-align: left;
+}
+.brandtan {
+    width: 580px;
+    padding: 10px 0 15px 15px;
+    border: 3px solid #e3001d;
+    background: #fff;
+    position: absolute;
+    left: 0px;
+    top: -30px;
+}
+.selectsort {
+    width: 395px;
+    float: left;
+}
+.selectsort h2 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+}
+.selectsort dl {
+    padding: 8px 0px 5px;
+    line-height: 20px;
+}
+.selectsort dl dt{
+    color: red;
+    font-weight: bold;
+}
+.selectsort dl dd{
+    color: #a3a5a2;
+    margin-top: 3px;
+    line-height: 18px;
+    display: inline-block;
+}
+.selectsort dl dd a {
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 300;
+    color: #5f6a72;
+    padding: 0 5px;
+}
+.prdhot {
+    width: 150px;
+    float: right;
+    padding: 0px 5px 10px;
+}
+.prdhot h2 {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color:black;
+}
+.prdhot dl {
+    line-height: 22px;
+    width: 150px;
+    padding-bottom: 5px;
+}
+.prdhot dl dt {
+    width: 75px;
+    float: left;
+    padding: 0;
+    border: 0px;
+    background: none;
+    height: 22px;
+    line-height: 22px;
+}
+.prdhot dl dt a {
+    font-size: 12px;
+    margin: 0px;
+    color: #404040;
+}
+.lun_center{
+    height: 500px;
+    width: 750px;
+    margin-top: 4px;
+    float: left;
+    margin-left: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.bigPic {
+    height: 500px;
+    width: 30000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bigPic li{
+    float: left;
+    width: 750px;
+    height: 500px;
+}
+.bigPic li img{
+    width: 750px;
+    height: 500px;
+}
+.smallPic {
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.smallPic li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: white;
+}
+.smallPic li.active {
+    background: red;
+}
+.prev,
+.next {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    color: #ccc;
+    text-decoration: none;
+}
+.next {
+    left: auto;
+    right: 10px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.lun_right{
+    float: left;
+    margin-left: 79px;
+    margin-top: 20px;
+}
+.lun_right img{
+    margin-top: 20px;
+}
+
+/*====================品牌=========================*/
+.brand{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 150px;
+    background: white;
+}
+.brand .brand_list{
+    margin: 40px 10px;
+}
+.brand .brand_list li{
+    float: left;
+    margin-right: 20px;
+    width: 110px;
+    height: 70px;
+    border: 1px solid #c0c0c0;
+}
+.brand .brand_list li img{
+    width: 110px;
+    height: 70px;
+}
+.brand_more{
+    float: right;
+    margin-right: 20px;
+}
+
+/*   ================     秒杀     ==============  */
+.miaoSha{
+    width: 1200px;
+    margin: 20px auto;
+    background: white;
+    overflow: hidden;
+}
+.ms_left{
+    width: 840px;
+    float: left;
+    background: white;
+}
+.ms_list1{
+    color: #555;
+    font-size: 14px;
+    line-height: 35px;
+    border-bottom: 2px solid #b00;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.ms_list1 ul{
+    height: 35px;
+    line-height: 35px;
+}
+.ms_list1 ul li{
+    width: 120px;
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    height: 35px;
+    text-align: center;
+    border-right:1px solid #c0c0c0 ;
+}
+.ms_list1 ul li.hover{
+    background: #b00;
+    color: white;
+}
+.ms_list1 ul li.last{
+    border-right:none;
+}
+.ms_list2{
+    padding-top: 20px;
+    height: 270px;
+}
+.ms_list2 ul{
+    display: none;
+}
+.ms_list2 ul span{
+    color: red;
+    font-weight: bold;
+}
+.ms_list2 ul.hover1{
+    display: block;
+}
+.ms_list2 ul li{
+    width: 200px;
+    float: left;
+    padding-left: 10px;
+}
+.ms_list2 ul li{
+    margin: 0 auto;
+}
+.ms_list2 ul li p{
+    line-height: 24px;
+}
+.ms_right{
+    width: 320px;
+    height: 337px;
+    margin-left: 40px;
+    float: left;
+    background: white;
+}
+.ms_right img{
+    padding-left: 40px;
+}
+
+/*   ================     会员促销     ==============  */
+.vip{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.vip1{
+    width: 1175px;
+    border: solid 1px #E7E7E8;
+    background: #fff;
+    position: relative;
+    padding: 15px 12px 10px 11px;
+}
+.vip_center{
+    width: 1178px;
+}
+.title {
+    border-bottom: solid 1px #B10000;
+    height: 24px;
+    font-size: 18px;
+    padding: 0px 0px 3px 5px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.title h3 {
+    float: left;
+    font-size: 18px;
+    height: 24px;
+    overflow: hidden;
+}
+.title span {
+    display: block;
+    width: 235px;
+    height: 3px;
+    overflow: hidden;
+    background: #B10000;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.title em {
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C8C9CA;
+    padding-left: 5px;
+    margin-top: 3px;
+}
+.vip_list{
+    height: 320px;
+}
+.vip_list li{
+    float: left;
+    width: 235px;
+}
+.vip_list li img{
+    width: 235px;
+    height: 320px;
+}
+
+/*   ================     手机数码     ==============  */
+.phone{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    background: white;
+}
+.phone1{
+    width: 1175px;
+    background: #fff;
+    position: relative;
+    padding: 15px 12px 10px 11px;
+}
+.phone_center{
+    width: 1178px;
+}
+.title1 {
+    border-bottom: solid 1px #B10000;
+    height: 24px;
+    font-size: 18px;
+    padding: 0px 0px 3px 5px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.title1 h3 {
+    float: left;
+    font-size: 18px;
+    height: 24px;
+    overflow: hidden;
+}
+.title1 span {
+    display: block;
+    width: 235px;
+    height: 3px;
+    overflow: hidden;
+    background: #B10000;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.title1 em {
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C8C9CA;
+    padding-left: 5px;
+    margin-top: 3px;
+}
+.title1 .rightLink {
+    float: right;
+    width: 850px;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-align: right;
+    color: #888;
+}
+.title1 .rightLink a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #888;
+}
+.phone_lun{
+    width: 270px;
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.phone_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.active1{
+    display: block;
+}
+.phone_lun a img{
+    width: 270px;
+    height: 480px;
+    display: none;
+}
+.phone_list{
+    height: 480px;
+    width: 930px;
+    float: left;
+    background: white;
+    text-align: center;
+}
+.phone_list li{
+    float: left;
+    width: 160px;
+    height: 240px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.phone_list li span{
+    color: red;
+    font-weight: bold;
+}
+.phone_list li img{
+    width: 150px;
+    height: 162px;
+}
+
+/*   ================     礼品箱包    ==============  */
+.gift_lun{
+    width: 270px;
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.gift_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gift_lun a img.active1{
+    display: block;
+}
+.gift_lun a img{
+    width: 270px;
+    height: 480px;
+    display: none;
+}
+
+/*   ================     通栏    ==============  */
+.tonglan {
+    width: 1200px;
+    margin: 0 auto 10px;
+    clear: both;
+    margin-top: 20px;
+}
+
+/*   ================     厨具电脑   ==============  */
+.computer{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    background: white;
+}
+.comLeft{
+    width: 580px;
+    float: left;
+}
+.comLeft1{
+    width: 570px;
+    background: #fff;
+    position: relative;
+    padding: 15px 12px 10px 11px;
+}
+.computer_center{
+    width: 560px;
+}
+.title2 {
+    border-bottom: solid 1px #B10000;
+    height: 24px;
+    font-size: 18px;
+    padding: 0px 0px 3px 5px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.title2 h3 {
+    float: left;
+    font-size: 18px;
+    height: 24px;
+    overflow: hidden;
+}
+.title2 span {
+    display: block;
+    width: 235px;
+    height: 3px;
+    overflow: hidden;
+    background: #B10000;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.title2 em {
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C8C9CA;
+    padding-left: 5px;
+    margin-top: 3px;
+}
+.title2 .rightLink {
+    float: right;
+    width: 378px;
+    height: 16px;
+    overflow: hidden;
+    line-height: 16px;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-align: right;
+    color: #888;
+}
+.title2 .rightLink a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #888;
+}
+
+.comLeft_lun{
+    width: 560px;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+.comLeft_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.comLeft_lun a img.active1{
+    display: block;
+}
+.comLeft_lun a img{
+    width: 560px;
+    height: 150px;
+    display: none;
+}
+
+.comRight_list{
+    height: 240px;
+    width: 560px;
+    float: left;
+    background: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.comRight_list li{
+    float: left;
+    width: 160px;
+    height: 240px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.comRight_list li span{
+    color: red;
+    font-weight: bold;
+}
+.comRight_list li img{
+    width: 150px;
+    height: 162px;
+}
+.comRight{
+    width: 580px;
+    float: left;
+    margin-left: 30px;
+}
+.comRight_lun{
+    width: 560px;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+.comRight_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.comRight_lun a img.active1{
+    display: block;
+}
+.comRight_lun a img{
+    width: 560px;
+    height: 150px;
+    display: none;
+}
+
+/*   ================     鞋帽服饰   ==============  */
+
+.dress_lun{
+    width: 270px;
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.dress_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dress_lun a img{
+    width: 270px;
+    height: 480px;
+    display: none;
+}
+.dress_list{
+    height: 480px;
+    width: 930px;
+    float: left;
+    background: white;
+    text-align: center;
+}
+.dress_list li{
+    float: left;
+    width: 166px;
+    height: 240px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.dress_list li span{
+    color: red;
+    font-weight: bold;
+}
+.dress_list li img{
+    width: 150px;
+    height: 162px;
+}
+
+/*   ================     个护化妆   ==============  */
+.makeup_lun{
+    width: 270px;
+    height: 480px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.makeup_lun a{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.makeup_lun a img{
+    width: 270px;
+    height: 480px;
+    display: none;
+}
+.makeup_list{
+    height: 480px;
+    width: 930px;
+    float: left;
+    background: white;
+    text-align: center;
+}
+.makeup_list li{
+    float: left;
+    width: 166px;
+    height: 240px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.makeup_list li span{
+    color: red;
+    font-weight: bold;
+}
+.makeup_list li img{
+    width: 150px;
+    height: 162px;
+}
+
+/*   ================     热门分类   ==============  */
+.fenlei-f {
+    width: 1180px;
+    height: 401px;
+    margin: 0 auto 10px;
+    border: 1px #e7e7e8 solid;
+    background: #fff;
+    padding: 10px;
+    clear: both;
+}
+.hotSort {
+    width: 1180px;
+}
+.hotSort li {
+    float: left;
+    width: 110px;
+    height: 170px;
+    border: solid 1px #E1E1E1;
+    background: #fff;
+    display: inline;
+    margin: 0 3px;
+    overflow: hidden;
+    text-align: center;
+}
+.hotSort li h3 {
+    padding-top: 20px;
+}
+.hotSort li h3 a {
+    display: block;
+    width: 74px;
+    height: 25px;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #B10000;
+}
+.hotSort li p {
+    width: 96px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+.hotSort li p a {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 3px;
+    color: #9E9E9F;
+    line-height: 20px;
+}
+
